@@ -2,10 +2,13 @@
 name = "cuda-convergence"
 version = "0.1.0"
 edition = "2021"
-description = "Equilibrium detection for fleet deliberation — convergence states, prediction, equilibrium actions"
+description = "Convergence monitor — 5 states, prediction, equilibrium"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Lucineer/cuda-convergence"
-keywords = ["ai", "fleet", "agent"]
+readme = "README.md"
+keywords = ["ai", "fleet", "agent", "rust"]
+categories = ["science"]
 
 [dependencies]
-cuda-equipment = { path = "../cuda-equipment" }
+cuda-equipment = "0.1"
+serde = { version = "1", features = ["derive"] }
